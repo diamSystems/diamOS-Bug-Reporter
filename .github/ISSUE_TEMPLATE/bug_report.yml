@@ -1,11 +1,10 @@
-name: Issue Report
+name: Bug Report
 description: Report an unexpected behavior or failure (AKA a bug)
 
 body:
   - type: markdown
     attributes:
       value: |
-          * Please read these [Tips](https://docs.elementary.io/contributor-guide/feedback/reporting-issues)
           * Be sure to search open and closed issues for duplicates
           * Do not put [things in brackets] in your report title
 
@@ -36,19 +35,10 @@ body:
 
   - type: dropdown
     attributes:
-      label: OS Version
-      description: The version of elementary OS you are using, or other operating system
+      label: diamOS Version
+      description: The version of diamOS you are using
       options:
         - diamOS 1
-    validations:
-      required: true
-
-  - type: dropdown
-    attributes:
-      label: Session Type
-      options:
-        - Classic Session (X11, This is the default)
-        - Secure Session (Wayland)
     validations:
       required: true
 
@@ -58,7 +48,6 @@ body:
       description: The version of the software you are using
       options:
         - Latest release (I have run all updates)
-        - Compiled from git
         - Older release (I have not run all updates)
     validations:
       required: true
